@@ -1,0 +1,131 @@
+body{
+    background: rgb(0, 0, 0);
+}
+
+header{
+    background: rgb(255, 255, 255);
+    color: rgb(211, 27, 27);
+    padding: 20px;
+    text-align: center;
+}
+
+
+main{
+    background: rgb(255, 253, 253);
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+nav a{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18pxs;
+}
+
+nav a:hover {
+    background-color: blue;
+    color:black;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 12px;
+    aspect-ratio: 16 / 9;
+    border-radius: 6px;
+}
+
+.gallery{
+    display: inline-block;
+
+}
+
+.gallery-item{
+    margin: 5px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    float: center;
+    width: 240px;
+    background: orange;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+
+}
+
+.gallery-item .desc{
+    padding: 15px;
+    text-align: center;
+    color: rgb(238, 23, 23)
+}
+
+.gallery-item:hover{
+    border: 3px solid #a84444;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid blue;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    color: brown;
+}
+
+th {
+    background-color: blueviolet;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: left;
+    color: white;
+}
+
+tr:hover {
+    background-color: white
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row .column:last-child .card {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.row .column:last-child .card .gallery {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
